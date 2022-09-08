@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/style/estilo.css">
+    <link rel="icon" href="./assets/img/icono.ico">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JS</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA DE MI</a></li>
+                    <li><a href="#exper" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#habil" onclick="seleccionar()">MIS HABILIDADES</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacT" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION home -->
+    <section id="home" class="home">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/logo2.jpeg" alt="">
+            </div>
+            <h1>Jessica Espejo</h1>
+            <h2>FREELANCE FULL STACK</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/joejonnesgm/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://es.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2 data-heading="About Me" class="section_title">Acerca de mi </h2>
+            <p class="letra">Tengo Conocimientos En Front-End Y Back-End Web (Entre Otros) Próximamente Desarrollador
+                Web FullStack-React.
+                -- </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-01-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            123654789
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <a href="https://github.com/JessicaEspejo/POR" title="githubportaafoliio" class="butgit">
+                                <h4>GITHUB</h4>
+                            </a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button>
+                <a href="./assets/cv.odt" download="dowload cv" title="descargar cv">Descargar CV <i
+                        class="fa-solid fa-download"></i>
+                    <span class="overlay"></span></a>
+            </button>
+
+
+
+    </section>
+
+    <!--=====experience =====-->
+
+    <div class="services" id="exper">
+        <h2 data-heading="Experience" class="section_title">Experiencia</h2>
+        <h2>Programador Web Y Preparaciones De Reportes.
+            Creación Y Automatización De Reportes Con Reporting Services. Ademas De Hacer Actualizaciones De La Página
+            De La Empresa.</h2>
+        <div class="col">
+            <i class="fas fa-tv"></i>
+            <h3>Responsive layout</h3>
+            <h4>Lorem ipsum d agnam.</h4>
+        </div>
+        <div class="col">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <h4>Lorem el alias nihil magnam.</h4>
+        </div>
+        <div class="col">
+            <i class="fab fa-searchengin"></i>
+            <h3>UI/UX</h3>
+            <h4>Lorem ipsum dolor .</h4>
+        </div>
+    </div>
+
+    <!-- portafolio -->
+
+
+    <section id="portafolio" class="POR">
+        <h2 data-heading="My Portfolio" class="section_title">Mi Portafolio</h2>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/work-4.webp" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Gym</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/work-2.webp" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/p1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/p1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño web</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!--habil -->
+
+    <section class="habil contenido-seccion" id="habil">
+        <h2 data-heading="My Abilities" class="section_title">Mis habilidades</h2>
+        <div class="habil-content">
+            <div class="habil-box">
+                <h2>Mobile app desing</h2>
+                <img src="./assets/motion/ant-design_mobile-filled.svg" class="about__img">
+            </div>
+            <div class="habil-box">
+                <h2>Motion Desing</h2>
+                <img src="./assets/motion/mdi_material-design.svg" class="about__img">
+            </div>
+            <div class="habil-box">
+                <h2>Desarrollo web</h2>
+                <img src="./assets/motion/ic_outline-web-asset.svg" class="about__img">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!--===== Contact =====-->
+    <section class="contact section" id="contacT">
+        <h2 data-heading="Get in touch" class="section_title">Contact Me</h2>
+        <!--  -->
+        <div class="contact_container container grid">
+            <div class="contact_contect">
+                <div class="contact_info">
+                    <div class="contact_card">
+                        <i class="uil uil-envelope-edit info_icon"></i>
+                        <h3 class="contact_card-title">Email</h3>
+                        <span class="contact_card-data">jessiyoe6@gmail.com</span>
+                        <button>
+                            <a href="https://mail.google.com/mail/u/0/?zx=z26mjiya6bpq#inbox">Enviar Mensaje</a>
+
+
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class="uil uil-whatsapp info-icon"></i>
+                        <h3 class="contact_card-title">Whattsap</h3>
+                        <span class="contact_card-data">152-562-525</span>
+
+                        <button>
+                            <a href="https://web.whatsapp.com/"> Enviar Mensaje</a>
+
+                            <span class="overlay"></span>
+                        </button>
+
+                        </span>
+                    </div>
+
+                    <div class="contact_card">
+                        <i class="uil uil-facebook-messenger  info_icon"></i>
+                        <h3 class="contact_card-title">Facebook</h3>
+                        <span class="contact_card-data">jessiyoe</span>
+                        <button>
+                            <a
+                                href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjYxNjM2NTI1LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D">Enviar
+                                Mensaje</a>
+
+                        </button>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact_content">
+                <form action="https://formsubmit.co/6d843f5bd1f95a11a6cb2302f3340e2f" method="POST"
+                    class="contact_form">
+
+                    <div class="input_container">
+
+                        <input type="text" name="nombre" placeholder="Ingresa tu Nombre" class="input">
+                        <label for="">Nombre</label>
+                        <span>Nombre</span>
+                    </div>
+
+
+                    <div class="input_container">
+                        <input type="text" name="email" placeholder="Email" class="input">
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+
+                    <div class="input_container">
+                        <input type="text" name="telefono" placeholder="Telefono" class="input">
+
+                        <span>Telefono</span>
+                    </div>
+
+                    <div class="input_container textarea">
+                        <textarea name="comentariomensaje" id="" cols="30" rows="10"
+                            placeholder="Escribe tu mensaje ..." class="input"></textarea>
+                        <button>
+                            <a href=""></a> Enviar Mensaje</i> a
+
+                        </button>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/joejonnesgm/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://es.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
